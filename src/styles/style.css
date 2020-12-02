@@ -1,1 +1,6 @@
 /** CSS STYLE **/
+.header {
+  background-color: #ffffff;
+  height: 60px;
+  padding: 5px 20px;
+}
