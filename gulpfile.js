@@ -6,7 +6,6 @@ const gulp = require('gulp'),
   sass = require('gulp-sass'),
   imagemin = require('gulp-imagemin'),
   concat = require('gulp-concat'),
-  fs = require('fs'),
   browserSync = require('browser-sync').create(),
   nunjucksRender = require('gulp-nunjucks-render');
 
@@ -55,7 +54,7 @@ gulp.task('styles', function () {
 });
 
 gulp.task('scripts', function () {
-  gulp.src(srcAssets.scripts + '*/**.js')
+  gulp.src(srcAssets.scripts + '**.js')
     .pipe(gulpif(isProd, uglify()))
     .pipe(gulp.dest(destAssets.scripts));
 });
@@ -98,11 +97,10 @@ gulp.task('watch', ['copy', 'styles', 'scripts', 'template', 'browserSync'], fun
   gulp.watch(srcAssets.styles + '**/*.+(scss|sass|css)', ['styles']);
   gulp.watch(srcAssets.scripts + '**/*.js', ['scripts', browserSync.reload]);
   gulp.watch(srcAssets.root + '**/*.+(html|nunjucks|njk)', ['template', browserSync.reload]);
-  gulp.watch('navigation.json', ['template', browserSync.reload]);
 });
 
 gulp.task('default', ['clean', 'images', 'styles', 'scripts', 'template', 'watch'], function () {
-  console.log('############ =========> Development');
+  // console.log('############ =========> Development');
 });
 
 gulp.task('build', ['default']);
