@@ -1,0 +1,65 @@
+@font-face {
+  font-weight: 400;
+  font-family: 'Open Sans Normal';
+  font-style: normal;
+  src: url("../fonts/OpenSans-Regular.ttf") format("truetype"); }
+
+@font-face {
+  font-weight: 400;
+  font-family: 'Neucha';
+  font-style: normal;
+  src: url("../fonts/Neucha.ttf") format("truetype"); }
+
+/* line 15, src/styles/typography.scss */
+* {
+  color: #2a2626;
+  font-size: 1.6em;
+  line-height: 1.6; }
+
+/* line 21, src/styles/typography.scss */
+h1,
+h2,
+h3 {
+  line-height: 1.6em; }
+
+/* line 27, src/styles/typography.scss */
+h1 {
+  font-size: 72px; }
+
+/* line 31, src/styles/typography.scss */
+h2 {
+  font-size: 60px; }
+
+/* line 35, src/styles/typography.scss */
+h3 {
+  font-size: 34px; }
+
+/* line 1, src/styles/global.scss */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+/* line 7, src/styles/global.scss */
+html {
+  height: 100%; }
+
+/* line 11, src/styles/global.scss */
+body {
+  min-height: 100vh; }
+
+/* line 15, src/styles/global.scss */
+section {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 100px 0; }
+
+/* line 1, src/styles/header.scss */
+.header {
+  min-height: 100vh;
+  background-image: url("../images/background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.9; }
+
+/*# sourceMappingURL=../../sass */

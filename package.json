@@ -10,7 +10,17 @@
     "stylelint-config-rational-order": "^0.1.2",
     "stylelint-config-standard": "^20.0.0",
     "stylelint-order": "^4.1.0",
-    "surge": "^0.21.7"
+    "surge": "^0.21.7",
+    "browser-sync": "^2.24.4",
+    "del": "^3.0.0",
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.0",
+    "gulp-data": "^1.2.1",
+    "gulp-if": "^2.0.1",
+    "gulp-imagemin": "^4.1.0",
+    "gulp-nunjucks-render": "^2.0.0",
+    "gulp-sass": "^4.0.1",
+    "gulp-uglify": "^3.0.0"
   },
   "author": "Nikita Mikhaylov",
   "license": "ISC"
