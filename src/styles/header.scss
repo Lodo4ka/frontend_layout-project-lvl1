@@ -5,4 +5,12 @@
   background-repeat: no-repeat;
   background-size: cover;
   opacity: 0.9;
+
+  &__img {
+    position: relative;
+    top: 55px;
+    right: -270px;
+
+    height: 525px;
+  }
 }

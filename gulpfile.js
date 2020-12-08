@@ -44,6 +44,7 @@ gulp.task('styles', function () {
       sourceMap: 'sass',
       outputStyle: 'nested'
     }))
+    .on('error', sass.logError)
     .pipe(gulpif(isProd, sass({
       outputStyle: 'compressed'
     })))
