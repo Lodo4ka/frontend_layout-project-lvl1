@@ -1,5 +1,6 @@
 .youtube {
   margin: 30px auto;
+  padding-top: 100px;
 
   text-align: center;
 
@@ -16,6 +17,81 @@
   }
 
   &__video {
+    position: relative;
+    top: 100px;
+
     filter: drop-shadow(0 16px 32px rgba(0, 0, 0, 0.15));
+
+    &_description {
+      margin-top: 35px;
+      // margin: 35px auto;
+
+      font-family: 'Open Sans Normal', sans-serif;
+    }
+  }
+}
+
+.main-menu {
+  position: relative;
+
+  &::before {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+
+    background-color: $main-dark;
+
+    content: '';
+  }
+  padding: 200px 164px 100px;
+
+  .main-menu__card_container {
+    display: flex;
+    flex-wrap: wrap;
+
+    .main-menu__card {
+      max-width: 320px;
+      margin: 15px;
+      padding: 24px;
+
+      font-family: 'Neucha', serif;
+
+      background-color: $light;
+
+      &-number {
+        font-size: 64px;
+      }
+
+      &-title {
+        color: $main;
+        font-size: 34px;
+      }
+
+      &-description {
+        color: $dark;
+        font-size: 16px;
+        font-family: 'Open Sans Normal', sans-serif;
+      }
+    }
+
+    .main-menu__card.title {
+      max-width: 320px;
+      max-height: 310px;
+      padding: 0;
+
+      color: $color-white;
+
+      font-size: 52px;
+      line-height: 1.2;
+
+      background: transparent;
+    }
+
+    .main-menu__card-main {
+      color: $main;
+    }
   }
 }
