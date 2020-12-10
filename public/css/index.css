@@ -12,15 +12,7 @@
 
 /* line 15, src/styles/typography.scss */
 * {
-  color: #2a2626;
-  font-size: 1.6em;
-  line-height: 1.6; }
-
-/* line 21, src/styles/typography.scss */
-h1,
-h2,
-h3 {
-  line-height: 1.6em; }
+  color: #2a2626; }
 
 /* line 27, src/styles/typography.scss */
 h1 {
@@ -49,23 +41,64 @@ body {
   min-height: 100vh; }
 
 /* line 15, src/styles/global.scss */
+header,
+footer,
 section {
   max-width: 1100px;
   margin: 0 auto;
   padding: 100px 0; }
 
-/* line 1, src/styles/header.scss */
-.header {
-  min-height: 100vh;
+/* line 2, src/styles/header.scss */
+.header-wrapper::before {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
   background-image: url("../images/background.png");
   background-repeat: no-repeat;
   background-size: cover;
-  opacity: 0.9; }
-  /* line 9, src/styles/header.scss */
-  .header__img {
-    position: relative;
+  opacity: 0.6;
+  content: ''; }
+
+/* line 17, src/styles/header.scss */
+.header-wrapper .header {
+  position: relative;
+  font-family: 'Neucha', serif;
+  line-height: 1.2; }
+  /* line 23, src/styles/header.scss */
+  .header-wrapper .header__title-main {
+    color: #fe8a02; }
+  /* line 27, src/styles/header.scss */
+  .header-wrapper .header__img {
+    position: absolute;
     top: 55px;
     right: -270px;
     height: 525px; }
+
+/* line 36, src/styles/header.scss */
+.header-wrapper .header__description-wrapper {
+  display: flex;
+  margin-top: 225px; }
+  /* line 40, src/styles/header.scss */
+  .header-wrapper .header__description-wrapper .header__description {
+    padding: 0 15px; }
+
+/* line 1, src/styles/main.scss */
+.youtube {
+  margin: 30px auto;
+  text-align: center; }
+  /* line 6, src/styles/main.scss */
+  .youtube__title {
+    font-family: 'Neucha', serif; }
+    /* line 9, src/styles/main.scss */
+    .youtube__title-dark {
+      color: #2a2626; }
+    /* line 13, src/styles/main.scss */
+    .youtube__title-main {
+      color: #fe8a02; }
+  /* line 18, src/styles/main.scss */
+  .youtube__video {
+    filter: drop-shadow(0 16px 32px rgba(0, 0, 0, 0.15)); }
 
 /*# sourceMappingURL=../../sass */

@@ -21,6 +21,7 @@ const srcAssets = {
   scripts: basePath.src + 'scripts/',
   images: basePath.src + 'images/',
   assets: basePath.src + 'assets/',
+  fonts: basePath.src + 'fonts/',
   modules: 'node_modules/',
   root: basePath.src
 };
@@ -30,6 +31,7 @@ const destAssets = {
   scripts: basePath.dest + 'js/',
   images: basePath.dest + 'images/',
   assets: basePath.dest + 'assets/',
+  fonts: basePath.dest + 'fonts/',
   root: basePath.dest
 };
 
@@ -85,6 +87,11 @@ gulp.task('copy', function () {
     .pipe(gulp.dest(destAssets.images))
 });
 
+gulp.task('copy-fonts', function () {
+  return gulp.src([srcAssets.fonts + '*.+(eot|ttf|woff|woff2)'])
+    .pipe(gulp.dest(destAssets.fonts))
+});
+
 gulp.task('template', function () {
   return gulp.src(srcAssets.root + 'views/pages/**/*.+(html|nunjucks|njk)')
     .pipe(nunjucksRender({
@@ -93,7 +100,7 @@ gulp.task('template', function () {
     .pipe(gulp.dest(destAssets.root))
 });
 
-gulp.task('watch', ['copy', 'styles', 'scripts', 'template', 'browserSync'], function () {
+gulp.task('watch', ['copy', 'copy-fonts', 'styles', 'scripts', 'template', 'browserSync'], function () {
   gulp.watch(srcAssets.images + '**/*.+(png|jpg|gif|svg)', ['copy']);
   gulp.watch(srcAssets.styles + '**/*.+(scss|sass|css)', ['styles']);
   gulp.watch(srcAssets.scripts + '**/*.js', ['scripts', browserSync.reload]);
