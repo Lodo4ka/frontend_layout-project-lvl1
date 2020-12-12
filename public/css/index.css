@@ -1,3 +1,7 @@
+/* line 1, src/styles/utility.scss */
+.position-relative {
+  position: relative; }
+
 @font-face {
   font-weight: 400;
   font-family: 'Open Sans Normal';
@@ -73,8 +77,9 @@ html {
 
 /* line 38, src/styles/header.scss */
 .header-wrapper .header__description-wrapper {
-  display: flex; }
-  /* line 41, src/styles/header.scss */
+  display: flex;
+  margin-top: 225px; }
+  /* line 42, src/styles/header.scss */
   .header-wrapper .header__description-wrapper .header__description {
     padding: 0 15px; }
 
@@ -119,37 +124,103 @@ html {
   /* line 51, src/styles/main.scss */
   .main-menu .main-menu__card_container {
     display: flex;
-    flex-wrap: wrap; }
-    /* line 55, src/styles/main.scss */
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: auto; }
+    /* line 57, src/styles/main.scss */
     .main-menu .main-menu__card_container .main-menu__card {
-      max-width: 320px;
+      max-width: 350px;
+      height: 348px;
       margin: 15px;
       padding: 24px;
       font-family: 'Neucha', serif;
       background-color: #f5f4f0; }
-      /* line 64, src/styles/main.scss */
+      /* line 67, src/styles/main.scss */
       .main-menu .main-menu__card_container .main-menu__card-number {
         font-size: 64px; }
-      /* line 68, src/styles/main.scss */
+      /* line 71, src/styles/main.scss */
       .main-menu .main-menu__card_container .main-menu__card-title {
         color: #fe8a02;
         font-size: 34px; }
-      /* line 73, src/styles/main.scss */
+      /* line 76, src/styles/main.scss */
       .main-menu .main-menu__card_container .main-menu__card-description {
         color: #2a2626;
         font-size: 16px;
         font-family: 'Open Sans Normal', sans-serif; }
-    /* line 80, src/styles/main.scss */
+    /* line 83, src/styles/main.scss */
     .main-menu .main-menu__card_container .main-menu__card.title {
-      max-width: 320px;
-      max-height: 310px;
+      max-width: 350px;
+      height: 348px;
       padding: 0;
       color: #fff;
       font-size: 52px;
       line-height: 1.2;
       background: transparent; }
-    /* line 93, src/styles/main.scss */
+    /* line 96, src/styles/main.scss */
     .main-menu .main-menu__card_container .main-menu__card-main {
       color: #fe8a02; }
+
+/* line 102, src/styles/main.scss */
+.ikea {
+  position: relative;
+  padding: 100px 0 0;
+  font-family: 'Neucha', serif; }
+  /* line 109, src/styles/main.scss */
+  .ikea::before {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: url("../images/background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.6;
+    content: ''; }
+
+/* line 125, src/styles/main.scss */
+.ikea__title-container {
+  display: flex; }
+
+/* line 129, src/styles/main.scss */
+.ikea__title-wrapper {
+  margin-left: auto; }
+
+/* line 133, src/styles/main.scss */
+.ikea__img {
+  position: absolute;
+  top: 60px;
+  left: -50px;
+  height: 405px; }
+
+/* line 141, src/styles/main.scss */
+.ikea__symptoms {
+  margin-top: 270px;
+  padding: 4px;
+  color: #fff;
+  font-size: 14px;
+  font-family: 'Open Sans Normal', sans-serif;
+  background-color: #b09a81; }
+
+/* line 153, src/styles/main.scss */
+.ikea__title-grey {
+  color: #908d8b;
+  font-size: 24px; }
+
+/* line 158, src/styles/main.scss */
+.ikea__title_main-dark {
+  margin-bottom: 24px;
+  color: #2a2626; }
+
+/* line 164, src/styles/main.scss */
+.ikea__title_sub-dark {
+  max-width: 540px;
+  color: #2a2626;
+  font-size: 34px; }
+
+/* line 171, src/styles/main.scss */
+.ikea__description-wrapper {
+  display: flex;
+  margin-top: 24px; }
 
 /*# sourceMappingURL=../../sass */
