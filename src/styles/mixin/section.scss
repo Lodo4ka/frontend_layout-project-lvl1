@@ -1,4 +1,4 @@
-@mixin section($name, $bgColor, $subtitleColor, $titleColor, $sympColor, $sympBgColor, $marginSymp, $side, $positions, $marginSymp) {
+@mixin section($name, $bgColor, $subtitleColor, $titleColor, $sympColor, $sympBgColor, $marginSymp, $side, $positions) {
   .#{$name} {
     position: relative;
 
@@ -13,12 +13,23 @@
       bottom: 0;
       left: 0;
 
-      background-color: $bgColor;
-
       background-image: url('../images/background.png');
       background-repeat: no-repeat;
       background-size: cover;
-      opacity: 0.9;
+      opacity: 0.1;
+
+      content: '';
+    }
+
+    &::after {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      z-index: -1;
+
+      background-color: $bgColor;
 
       content: '';
     }
@@ -51,6 +62,7 @@
     padding: 4px;
 
     color: $sympColor;
+    font-weight: 700;
     font-size: 14px;
 
     font-family: 'Open Sans Normal', sans-serif;
@@ -59,6 +71,8 @@
   }
 
   .#{$name}__title_subtitle {
+    margin-bottom: 8px;
+
     color: $subtitleColor;
     font-size: 24px;
   }

@@ -13,18 +13,16 @@
 </head>
 
 <body>
-{% block header %}
+  {% block header %}
   {% include "partials/header.njk" %}
-{% endblock %}
-{% block main %}
-{% endblock %}
-<footer>
-  {% block footer %}
-    {% include "partials/footer.njk" %}
   {% endblock %}
-</footer>
-<!-- Scripts -->
-<script type="text/javascript" src="js/index.js"></script>
+  {% block main %}
+  {% endblock %}
+  {% block footer %}
+  {% include "partials/footer.njk" %}
+  {% endblock %}
+  <!-- Scripts -->
+  <script type="text/javascript" src="js/index.js"></script>
 </body>
 
 </html>
