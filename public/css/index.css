@@ -41,7 +41,7 @@ h3 {
 html {
   height: 100%; }
 
-/* line 17, src/styles/global.scss */
+/* line 13, src/styles/global.scss */
 .container {
   max-width: 1100px;
   margin: 0 auto; }
@@ -160,67 +160,142 @@ html {
     .main-menu .main-menu__card_container .main-menu__card-main {
       color: #fe8a02; }
 
-/* line 102, src/styles/main.scss */
+/* line 2, src/styles/mixin/section.scss */
 .ikea {
   position: relative;
-  padding: 100px 0 0;
+  padding: 100px 0;
   font-family: 'Neucha', serif; }
-  /* line 109, src/styles/main.scss */
+  /* line 9, src/styles/mixin/section.scss */
   .ikea::before {
     position: absolute;
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
+    background-color: "";
     background-image: url("../images/background.png");
     background-repeat: no-repeat;
     background-size: cover;
-    opacity: 0.6;
+    opacity: 0.9;
     content: ''; }
 
-/* line 125, src/styles/main.scss */
+/* line 27, src/styles/mixin/section.scss */
 .ikea__title-container {
   display: flex; }
 
-/* line 129, src/styles/main.scss */
+/* line 31, src/styles/mixin/section.scss */
 .ikea__title-wrapper {
   margin-left: auto; }
 
-/* line 133, src/styles/main.scss */
+/* line 37, src/styles/mixin/section.scss */
 .ikea__img {
   position: absolute;
-  top: 60px;
-  left: -50px;
-  height: 405px; }
+  top: 0;
+  left: 0;
+  height: 405px;
+  filter: drop-shadow(0 16px 32px rgba(0, 0, 0, 0.15)); }
 
-/* line 141, src/styles/main.scss */
+/* line 49, src/styles/mixin/section.scss */
 .ikea__symptoms {
-  margin-top: 270px;
+  margin-top: 227px;
   padding: 4px;
   color: #fff;
   font-size: 14px;
   font-family: 'Open Sans Normal', sans-serif;
   background-color: #b09a81; }
 
-/* line 153, src/styles/main.scss */
-.ikea__title-grey {
+/* line 61, src/styles/mixin/section.scss */
+.ikea__title_subtitle {
   color: #908d8b;
   font-size: 24px; }
 
-/* line 158, src/styles/main.scss */
-.ikea__title_main-dark {
+/* line 66, src/styles/mixin/section.scss */
+.ikea__title_main {
+  max-width: 540px;
   margin-bottom: 24px;
   color: #2a2626; }
 
-/* line 164, src/styles/main.scss */
-.ikea__title_sub-dark {
+/* line 73, src/styles/mixin/section.scss */
+.ikea__title_desc {
   max-width: 540px;
   color: #2a2626;
   font-size: 34px; }
 
-/* line 171, src/styles/main.scss */
+/* line 80, src/styles/mixin/section.scss */
 .ikea__description-wrapper {
   display: flex;
   margin-top: 24px; }
+
+/* line 85, src/styles/mixin/section.scss */
+.ikea__description {
+  color: #2a2626;
+  font-family: 'Open Sans Normal', sans-serif; }
+
+/* line 2, src/styles/mixin/section.scss */
+.optimization {
+  position: relative;
+  padding: 100px 0;
+  font-family: 'Neucha', serif; }
+  /* line 9, src/styles/mixin/section.scss */
+  .optimization::before {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #b09a81;
+    background-image: url("../images/background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.9;
+    content: ''; }
+
+/* line 27, src/styles/mixin/section.scss */
+.optimization__title-container {
+  display: flex; }
+
+/* line 37, src/styles/mixin/section.scss */
+.optimization__img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 405px;
+  filter: drop-shadow(0 16px 32px rgba(0, 0, 0, 0.15)); }
+
+/* line 49, src/styles/mixin/section.scss */
+.optimization__symptoms {
+  margin-top: 161px;
+  padding: 4px;
+  color: #2a2626;
+  font-size: 14px;
+  font-family: 'Open Sans Normal', sans-serif;
+  background-color: #fff; }
+
+/* line 61, src/styles/mixin/section.scss */
+.optimization__title_subtitle {
+  color: #fff;
+  font-size: 24px; }
+
+/* line 66, src/styles/mixin/section.scss */
+.optimization__title_main {
+  max-width: 540px;
+  margin-bottom: 24px;
+  color: #fff; }
+
+/* line 73, src/styles/mixin/section.scss */
+.optimization__title_desc {
+  max-width: 540px;
+  color: #fff;
+  font-size: 34px; }
+
+/* line 80, src/styles/mixin/section.scss */
+.optimization__description-wrapper {
+  display: flex;
+  margin-top: 24px; }
+
+/* line 85, src/styles/mixin/section.scss */
+.optimization__description {
+  color: #fff;
+  font-family: 'Open Sans Normal', sans-serif; }
 
 /*# sourceMappingURL=../../sass */
